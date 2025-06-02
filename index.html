@@ -1,71 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <title>首頁 - 大社國小1965級愛信義班同學會</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大社國小1965級愛信義班同學會</title>
   <style>
     body {
-      font-family: "微軟正黑體", Arial, sans-serif;
-      margin: 20px;
-      background: #f9f9f9;
+      font-family: "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
-    nav {
-      margin-bottom: 20px;
-    }
-    nav a {
-      margin-right: 12px;
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      color: #0066cc;
-      margin-bottom: 10px;
-    }
-    .intro {
-      background: #e6f2ff;
-      border-left: 6px solid #3399ff;
-      padding: 15px 20px;
-      margin-bottom: 30px;
-      font-size: 1.1em;
-      color: #004080;
-    }
-    .photo-area {
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
       text-align: center;
     }
-    .photo-area img {
-      max-width: 80%;
-      height: auto;
-      border-radius: 6px;
-      box-shadow: 0 0 8px #ccc;
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #005bb5;
+    }
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.8;
+    }
+    .hero {
+      background-image: url("images/school.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>大社國小1965級愛信義班同學會</h1>
+  </header>
   <nav>
     <a href="index.html">首頁</a>
-    <a href="class-ai.html">愛班同學</a>
-    <a href="class-xin.html">信班同學</a>
-    <a href="class-yi.html">義班同學</a>
+    <a href="ai.html">愛班同學</a>
+    <a href="xin.html">信班同學</a>
+    <a href="yi.html">義班同學</a>
     <a href="honor.html">光榮事蹟</a>
     <a href="life.html">生活點滴</a>
-    <a href="donation.html">捐贈母校</a>
+    <a href="donate.html">捐贈母校</a>
     <a href="contact.html">聯絡我們</a>
   </nav>
-
-  <h1>大社國小1965級愛信義班同學會</h1>
-  <div class="intro">
-    高雄市路竹區高雄市立大社國民小學（簡稱大社國小）成立於1900年，近年來受到少子化嚴重衝擊，至今全校僅剩八班，兩百多位小學生。學校企盼整頓，吸引新生入學。
+  <div class="hero">
+    <div class="hero-text">
+      <h2>歡迎回到母校</h2>
+    </div>
   </div>
-
-  <div class="photo-area">
-    <img src="images/school PIC.jpg" alt="大社國小校園照片" />
-  </div>
-
+  <main>
+    <p>高雄市路竹區高雄市立大社國民小學（簡稱大社國小）成立於1900年，近年來受到少子化嚴重衝擊，至今全校僅剩八班，兩百多位小學生。學校企盼整頓，吸引新生入學。</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 大社國小1965級愛信義班同學會</p>
+  </footer>
 </body>
 </html>
